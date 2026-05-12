@@ -62,6 +62,30 @@ border-radius: 50px; font-size: 1.25rem; font-weight: 700; width: 100%; cursor: 
 border-radius: 20px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); margin-top: 40px;
 }
 
+/* Bouton Appel Flottant */
+.floating-call {
+position: fixed;
+bottom: 25px;
+right: 25px;
+background: #25D366;
+color: white;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.9rem;
+box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+z-index: 9999;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.floating-call:hover {
+transform: scale(1.15);
+background: #20b35a;
+}
+
 footer { background: var(--nav); color: #aaa; text-align: center; padding: 55px 20px; }
 </style>
 </head>
@@ -124,13 +148,12 @@ Pro'Volets
 
 <section id="contact">
 <h2>Demande de Devis Gratuit</h2>
-
 <div class="contact-form">
 <form action="https://formspree.io/f/xqenndez" method="POST">
 <input type="text" name="name" placeholder="Nom et Prénom" required>
 <input type="tel" name="phone" placeholder="Téléphone" required>
 <input type="email" name="email" placeholder="Email">
-<textarea name="message" rows="6" placeholder="Décrivez votre projet (volet, cuisine, parquet...)" required></textarea>
+<textarea name="message" rows="6" placeholder="Décrivez votre projet..." required></textarea>
 <button type="submit" class="btn-form">Envoyer ma demande</button>
 </form>
 </div>
@@ -146,6 +169,11 @@ Pro'Volets
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.8!2d-1.6825!3d48.108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ee0c5e8c0b5b9%3A0x9f8e8b8e8b8e8b8e!2sRue%20du%20Petit%20Marteau%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1747000000000" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 </section>
+
+<!-- Bouton Appel Flottant -->
+<a href="tel:0645763064" class="floating-call" title="Appeler maintenant">
+<i class="fas fa-phone"></i>
+</a>
 
 <footer>
 <p>&copy; 2026 Pro'Volets - SIRET 840 053 565 00023 - Rennes et alentours</p>
