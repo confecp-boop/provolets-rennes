@@ -67,8 +67,89 @@ footer { background: var(--nav); color: #aaa; text-align: center; padding: 55px 
 </head>
 <body>
 
-<!-- HEADER + HERO + SERVICES + RÉALISATIONS + AVIS (identique) -->
-<!-- ... (je te mets seulement la partie Contact corrigée) ... -->
+<header>
+<nav>
+<div class="logo">
+<img src="https://i.imgur.com/uYnmfmw.jpeg" alt="Pro'Volets" style="height:68px;border-radius:10px;">
+Pro'Volets
+</div>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#realisations">Réalisations</a>
+<a href="#avis">Avis</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Pro'Volets Rennes</h1>
+<p>Expertise professionnelle en réparation de volets roulants<br>et travaux d'aménagement intérieur</p>
+<a href="tel:0645763064" class="btn">
+<i class="fas fa-phone"></i> 06 45 76 30 64
+</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Nos Expertises</h2>
+<div class="services-grid">
+<div class="service">
+<i class="fas fa-tools" style="font-size:3.8rem;color:var(--accent);margin-bottom:20px;"></i>
+<h3>Réparation Volets Roulants</h3>
+<p>Toutes marques • Moteurs • Sangles • Stores</p>
+</div>
+<div class="service">
+<i class="fas fa-kitchen-set" style="font-size:3.8rem;color:var(--accent);margin-bottom:20px;"></i>
+<h3>Montage Cuisines</h3>
+<p>Installation complète et sur-mesure</p>
+</div>
+<div class="service">
+<i class="fas fa-couch" style="font-size:3.8rem;color:var(--accent);margin-bottom:20px;"></i>
+<h3>Montage Meubles</h3>
+<p>Ikea, Conforama et mobilier premium</p>
+</div>
+<div class="service">
+<i class="fas fa-hammer" style="font-size:3.8rem;color:var(--accent);margin-bottom:20px;"></i>
+<h3>Petits Travaux</h3>
+<p>Pose parquet • Nettoyage locaux • Bricolage</p>
+</div>
+</div>
+</section>
+
+<!-- RÉALISATIONS -->
+<section id="realisations">
+<h2>Nos Réalisations</h2>
+<div class="gallery">
+<img src="https://i.imgur.com/op7wNd0.jpeg" alt="Réparation volet roulant">
+<img src="https://i.imgur.com/gv7atxJ.jpeg" alt="Montage cuisine">
+<img src="https://i.imgur.com/EGsYEhH.jpeg" alt="Montage meubles">
+<img src="https://i.imgur.com/tloOBhm.jpeg" alt="Petits travaux">
+<img src="https://i.imgur.com/uYnmfmw.jpeg" alt="Pro'Volets">
+</div>
+</section>
+
+<!-- AVIS -->
+<section id="avis" style="background:#f1f0eb;">
+<h2>Ce que nos clients disent</h2>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:30px; max-width:1300px; margin:auto;">
+<div class="testimonial" style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);">
+<p>« Intervention très rapide et travail impeccable. »</p>
+<strong>— Sophie Martin, Rennes</strong>
+</div>
+<div class="testimonial" style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);">
+<p>« Cuisine montée parfaitement, très pro ! »</p>
+<strong>— Thomas Dubois, Cesson-Sévigné</strong>
+</div>
+<div class="testimonial" style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);">
+<p>« Pose parquet et nettoyage parfait. »</p>
+<strong>— Marie Leclerc, Saint-Grégoire</strong>
+</div>
+</div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -91,17 +172,9 @@ footer { background: var(--nav); color: #aaa; text-align: center; padding: 55px 
 <strong>SIRET : 840 053 565 00023</strong>
 </div>
 
-<!-- ✅ GOOGLE MAPS CORRIGÉ -->
 <div class="map-container">
-<iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.8!2d-1.6825!3d48.108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ee0c5e8c0b5b9%3A0x9f8e8b8e8b8e8b8e!2sRue%20du%20Petit%20Marteau%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1747000000000"
-width="100%"
-height="480"
-style="border:0;"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.8!2d-1.6825!3d48.108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ee0c5e8c0b5b9%3A0x9f8e8b8e8b8e8b8e!2sRue%20du%20Petit%20Marteau%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1747000000000"
+width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 </section>
 
