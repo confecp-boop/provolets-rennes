@@ -21,7 +21,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height:1.7; color:#3
 header { background: var(--nav); color: white; position: fixed; width: 100%; z-index: 1000; padding: 1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
 nav { max-width: 1400px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 30px; }
 .logo { font-size: 2.2rem; font-weight: 700; display: flex; align-items: center; gap: 15px; }
-.nav-links a { color: white; margin-left: 25px; text-decoration: none; font-weight: 500; }
+.nav-links a { color: white; margin-left: 32px; text-decoration: none; font-weight: 500; }
 .nav-links a:hover { color: var(--gold); }
 
 .hero {
@@ -39,12 +39,11 @@ font-size: 1.45rem; font-weight: 700; text-decoration: none; display: inline-fle
 .btn:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(212,175,55,0.45); }
 
 section { padding: 120px 20px; max-width: 1400px; margin: auto; }
-h2 { text-align: center; font-size: 2.9rem; margin-bottom: 75px; color: var(--nav); position: relative; }
-h2:after { content:''; width: 90px; height: 4px; background: var(--gold); position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); }
+h2 { text-align: center; font-size: 2.9rem; margin-bottom: 75px; color: var(--nav); }
 
-.services-grid, .gallery, .avantages { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 30px; }
-.service, .avantage, .testimonial { background: white; padding: 45px 30px; border-radius: 24px; text-align: center; box-shadow: 0 15px 45px rgba(0,0,0,0.09); transition: all 0.4s; }
-.service:hover, .avantage:hover { transform: translateY(-15px); }
+.services-grid, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 25px; }
+.service { background: white; padding: 48px 30px; border-radius: 24px; text-align: center; box-shadow: 0 15px 45px rgba(0,0,0,0.09); transition: all 0.4s; }
+.service:hover { transform: translateY(-18px); }
 
 .gallery img { width: 100%; height: 360px; object-fit: cover; border-radius: 20px; transition: all 0.4s; }
 .gallery img:hover { transform: scale(1.05); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
@@ -96,7 +95,6 @@ Pro'Volets
 <div class="nav-links">
 <a href="#services">Services</a>
 <a href="#realisations">Réalisations</a>
-<a href="#pourquoi">Pourquoi nous ?</a>
 <a href="#avis">Avis</a>
 <a href="#contact">Contact</a>
 </div>
@@ -123,17 +121,6 @@ Pro'Volets
 </div>
 </section>
 
-<!-- Pourquoi nous choisir -->
-<section id="pourquoi" style="background:#f8f7f4;">
-<h2>Pourquoi nous choisir ?</h2>
-<div class="avantages">
-<div class="avantage"><h3 style="font-size:3rem;color:var(--accent);">15+</h3><p>Années d'expérience</p></div>
-<div class="avantage"><h3 style="font-size:3rem;color:var(--accent);">100%</h3><p>Satisfaction client</p></div>
-<div class="avantage"><h3 style="font-size:3rem;color:var(--accent);">24h</h3><p>Délai de réponse moyen</p></div>
-<div class="avantage"><h3 style="font-size:3rem;color:var(--accent);">✓</h3><p>Devis gratuit & transparent</p></div>
-</div>
-</section>
-
 <section id="realisations">
 <h2>Nos Réalisations</h2>
 <div class="gallery">
@@ -148,18 +135,17 @@ Pro'Volets
 
 <section id="avis" style="background:#f1f0eb;">
 <h2>Ce que nos clients disent</h2>
-<div class="gallery" style="gap:30px;">
-<div class="testimonial"><p>« Intervention très rapide et travail impeccable. Mon volet fonctionne comme neuf ! »</p><strong>— Sophie Martin, Rennes</strong></div>
-<div class="testimonial"><p>« Cuisine montée parfaitement, très bon conseil et finitions soignées. »</p><strong>— Thomas Dubois, Cesson-Sévigné</strong></div>
-<div class="testimonial"><p>« Pose parquet et nettoyage parfait. Artisan sérieux et ponctuel. »</p><strong>— Marie Leclerc, Saint-Grégoire</strong></div>
-<div class="testimonial"><p>« Réparation urgente le jour même. Très satisfait du résultat. »</p><strong>— Laurent Moreau, Rennes</strong></div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:30px; max-width:1300px; margin:auto;">
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);"><p>« Intervention très rapide et travail impeccable. »</p><strong>— Sophie Martin, Rennes</strong></div>
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);"><p>« Cuisine montée parfaitement, très pro ! »</p><strong>— Thomas Dubois, Cesson-Sévigné</strong></div>
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.07);"><p>« Pose parquet et nettoyage parfait. »</p><strong>— Marie Leclerc, Saint-Grégoire</strong></div>
 </div>
 </section>
 
 <section id="contact">
 <h2>Demande de Devis Gratuit</h2>
 <div class="contact-form">
-<form action="https://formspree.io/f/xqenndez" method="POST">
+<form action="https://formspree.io/f/xlgzvprq" method="POST">
 <input type="text" name="name" placeholder="Nom et Prénom" required>
 <input type="tel" name="phone" placeholder="Téléphone" required>
 <input type="email" name="email" placeholder="Email">
@@ -180,9 +166,12 @@ Pro'Volets
 </div>
 </section>
 
-<!-- Boutons flottants -->
-<a href="tel:0645763064" class="floating-call" title="Appeler maintenant"><i class="fas fa-phone"></i></a>
-<a href="https://wa.me/33645763064" class="floating-whatsapp" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:0645763064" class="floating-call" title="Appeler maintenant">
+<i class="fas fa-phone"></i>
+</a>
+<a href="https://wa.me/33645763064" class="floating-whatsapp" target="_blank" title="WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 <footer>
 <p>&copy; 2026 Pro'Volets - SIRET 840 053 565 00023 - Rennes et alentours</p>
